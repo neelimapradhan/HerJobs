@@ -22,12 +22,13 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
- /* var marker = new google.maps.Marker({
-    position: map.getCenter(),
+ //department of defence
+  var DOD = new google.maps.LatLng(38.51, -77.0)
+  var markerDod = new google.maps.Marker({
+    position: DOD,
     map: map,
     title: 'Click to zoom'
   });
-  */
   
   //silicon
   var mapLatLong = new google.maps.LatLng(37.3876, -122,0575)
