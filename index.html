@@ -31,6 +31,14 @@ function initialize() {
     title: 'Click to zoom'
   });
   
+  //booz
+  var booz = new google.maps.LatLng(38.9225998,-77.2319233)
+  var markerBooz = new google.maps.Marker({
+    position: booz,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
   //Geico
   var geico = new google.maps.LatLng(38.9612322,-77.0906919)
   var markerGeico = new google.maps.Marker({
@@ -72,14 +80,62 @@ function initialize() {
   });
   
   //apple
-  var apple = new google.maps.LatLng(37.19, -122.1)
+  var apple = new google.maps.LatLng(37.331741,-122.030332)
   var markerApple = new google.maps.Marker({
     position: apple,
     map: map,
     title: 'Click to zoom'
   });
   
-  //washington state
+  //cisco
+  var cisco = new google.maps.LatLng(37.4093373,-121.9261735)
+  var markerCisco = new google.maps.Marker({
+    position: cisco,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  //intel
+  var intel = new google.maps.LatLng(37.3875909,-121.9637869)
+  var markerIntel = new google.maps.Marker({
+    position: intel,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  //yahoo
+  var yahoo = new google.maps.LatLng(37.4171809,-122.025103)
+  var markerYahoo = new google.maps.Marker({
+    position: yahoo,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  //ebay
+  var ebay = new google.maps.LatLng(37.2954597,-121.9275512)
+  var markerEbay = new google.maps.Marker({
+    position: ebay,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+   //HP
+  var hp = new google.maps.LatLng(37.4145618,-122.1462888)
+  var markerHP = new google.maps.Marker({
+    position: hp,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  //pinterest
+  var pinterest = new google.maps.LatLng(37.772996,-122.403742)
+  var markerPin = new google.maps.Marker({
+    position: pinterest,
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  //WASHINGTON STATE
   
   //microsoft
   var microsoft = new google.maps.LatLng(38.985023,-77.095176)
@@ -97,38 +153,27 @@ function initialize() {
     title: 'Click to zoom'
   });
   
+
   
-  //dc
-  var mapLatLong3 = new google.maps.LatLng(38.9047, -77.0164)
-  var marker4 = new google.maps.Marker({
-    position: mapLatLong3,
+   //TEXAS
+  var groupon = new google.maps.LatLng(41.8969173,-87.64354)
+  var markerGroup = new google.maps.Marker({
+    position: groupon,
     map: map,
     title: 'Click to zoom'
   });
   
-   //austin
-  var mapLatLong4 = new google.maps.LatLng(30.2500, -97.7500)
-  var marker5 = new google.maps.Marker({
-    position: mapLatLong4,
+  
+  
+   //NEWYORK
+  var ibm = new google.maps.LatLng(40.7621749,-73.9728615)
+  var markerIbm = new google.maps.Marker({
+    position: ibm,
     map: map,
     title: 'Click to zoom'
   });
   
-   //ny
-  var mapLatLong5 = new google.maps.LatLng(40.7127, -74.0059)
-  var marker6 = new google.maps.Marker({
-    position: mapLatLong5,
-    map: map,
-    title: 'Click to zoom'
-  });
   
-  //seattle
-  var mapLatLong6 = new google.maps.LatLng(47.6097, -122.3331)
-  var marker7 = new google.maps.Marker({
-    position: mapLatLong6,
-    map: map,
-    title: 'Click to zoom'
-  });
 
   google.maps.event.addListener(map, 'center_changed', function() {
     // 3 seconds after the center of the map has changed, pan back to the
