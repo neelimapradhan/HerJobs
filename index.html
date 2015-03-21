@@ -23,7 +23,13 @@ function initialize() {
       mapOptions);
 
   var marker = new google.maps.Marker({
-    position: map.getCenter(),
+    position: new google.maps.LatLng(37.3876, -122.0575),
+    map: map,
+    title: 'Click to zoom'
+  });
+  
+  var marker = new google.maps.Marker({
+    position: 
     map: map,
     title: 'Click to zoom'
   });
