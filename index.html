@@ -56,28 +56,30 @@
            <tr>
            <td>
              
-Friendly: <input type="checkbox" id="super">
+Friendly: <input type="checkbox" class="super">
 <br>
-Almost Friendly:<input type="checkbox" id="friendly">
+Almost Friendly:<input type="checkbox" class="friendly">
 <br>
-Not Friendly:<input type="checkbox" id="almost-friendly">
+Not Friendly:<input type="checkbox" class="almost-friendly">
 <br>
 <button onclick="displayResult()">Display</button>
 
-<script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
+<script>
 var superCheckBox = true;
 var friendlyCheckBox = true;
 var almostFriendlyCheckBox = false; 
 
 function displayResult() {
-    superCheckBox = $("#super").check();
-    friendlyCheckBox = $("#friendly").check();
-    almostFriendlyCheckBox = $("#friendly").check();
+    superCheckBox = $(".super").prop('checked');
+    friendlyCheckBox = $(".friendly").prop('checked');
+    almostFriendlyCheckBox = $(".friendly").prop('checked');
     console.log(superCheckBox);
     console.log(friendlyCheckBox);
     console.log(almostFriendlyCheckBox);
 }
+
 </script>
            </td>
          </tr>
@@ -92,7 +94,7 @@ function displayResult() {
     </div>
     <div id="map-canvas"></div>
     
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
     
