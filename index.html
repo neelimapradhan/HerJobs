@@ -177,45 +177,46 @@ function displayResult() {
   
     }
   
-  
-  //booz
-  var booz = new google.maps.LatLng(38.9225998,-77.2319233)
-  var pinImageBooz = colorRating(3.5);
-  var markerBooz = new google.maps.Marker({
-    position: booz,
-    map: map,
-    icon: pinImageBooz,
-    title: 'Booz Allen Hamilton'
-  });
-  
-   google.maps.event.addListener(markerBooz, 'click', function() {
-     info.close();
-     info = infoWindow(contentString('Booz Allen Hamilton', '3.5', '8283 Greensboro Dr, McLean, VA 22102', 
-    'http://www.inhersight.com/company/booz-allen-hamilton  '));
-    info.open(map, markerBooz);
-  });
-    
-    clickZoom(markerBooz);
-  
+  if(superCheckBox){
+      //booz
+      var booz = new google.maps.LatLng(38.9225998,-77.2319233)
+      var pinImageBooz = colorRating(3.5);
+      var markerBooz = new google.maps.Marker({
+        position: booz,
+        map: map,
+        icon: pinImageBooz,
+        title: 'Booz Allen Hamilton'
+      });
+      
+       google.maps.event.addListener(markerBooz, 'click', function() {
+         info.close();
+         info = infoWindow(contentString('Booz Allen Hamilton', '3.5', '8283 Greensboro Dr, McLean, VA 22102', 
+        'http://www.inhersight.com/company/booz-allen-hamilton  '));
+        info.open(map, markerBooz);
+      });
+        
+        clickZoom(markerBooz);
+  }
   //Geico
-  var geico = new google.maps.LatLng(38.9612322,-77.0906919)
-  var pinImageGeico = colorRating(1.4);
-  var markerGeico = new google.maps.Marker({
-    position: geico,
-    map: map,
-    icon: pinImageGeico,
-    title: 'Geico'
-  });
-  
-   google.maps.event.addListener(markerGeico, 'click', function() {
-     info.close();
-     info = infoWindow(contentString('Geico', '1.4', '5260 Western Ave, Chevy Chase, MD 20815', 
-    'http://www.inhersight.com/company/geico '));
-    info.open(map, markerGeico);
-  });
-  
-    clickZoom(markerGeico);
-    
+  if (almostFriendlyCheckBox) {
+      var geico = new google.maps.LatLng(38.9612322,-77.0906919)
+      var pinImageGeico = colorRating(1.4);
+      var markerGeico = new google.maps.Marker({
+        position: geico,
+        map: map,
+        icon: pinImageGeico,
+        title: 'Geico'
+      });
+      
+       google.maps.event.addListener(markerGeico, 'click', function() {
+         info.close();
+         info = infoWindow(contentString('Geico', '1.4', '5260 Western Ave, Chevy Chase, MD 20815', 
+        'http://www.inhersight.com/company/geico '));
+        info.open(map, markerGeico);
+      });
+      
+        clickZoom(markerGeico);
+  }  
   //capital one
   var capitalone = new google.maps.LatLng(38.9257487,-77.212276)
   var pinImageCap = colorRating(4.1);
@@ -595,6 +596,7 @@ function displayResult() {
   //RHODE ISLAND
   
   //cvs health
+  if (almostFriendlyCheckBox) {
   var cvs = new google.maps.LatLng(41.990756,-71.477265)
   var pinImageCvs = colorRating(2.1);
   var markerCVS = new google.maps.Marker({
@@ -611,7 +613,7 @@ function displayResult() {
   });
   
   clickZoom(markerCVS);
-  
+  }
   //fidelity
   
   var fidelity = new google.maps.LatLng(42.349119,-71.082163)
@@ -633,7 +635,7 @@ function displayResult() {
   clickZoom(markerFid);
   
   //abengoa
-  
+  if (almostFriendlyCheckBox) {
   var abengoa = new google.maps.LatLng(39.735451,-105.127586)
   var pinImageAbe = colorRating(1.9);
   var markerAbe = new google.maps.Marker({
@@ -651,7 +653,7 @@ function displayResult() {
   });
   
   clickZoom(markerAbe);
-
+}
   
   //Vanguard
   
