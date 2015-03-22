@@ -147,7 +147,7 @@ function displayResult() {
   //click to zoom
   function clickZoom(pin) {
      google.maps.event.addListener(pin, 'click', function() {
-      map.setZoom(6);
+      map.setZoom(map.getZoom() + 2);
     });
   }
 
