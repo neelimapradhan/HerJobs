@@ -56,11 +56,11 @@
            <tr>
            <td>
              
-Friendly: <input type="checkbox" class="super">
+Friendly: <input type="checkbox" class="super" checked/> 
 <br>
-Almost Friendly:<input type="checkbox" class="friendly">
+Almost Friendly:<input type="checkbox" class="friendly" checked/>
 <br>
-Not Friendly:<input type="checkbox" class="almost-friendly">
+Not Friendly:<input type="checkbox" class="almost-friendly" checked/>
 <br>
 <button onclick="displayResult()">Display</button>
 
@@ -69,7 +69,7 @@ Not Friendly:<input type="checkbox" class="almost-friendly">
 <script>
 var superCheckBox = true;
 var friendlyCheckBox = true;
-var almostFriendlyCheckBox = false; 
+var almostFriendlyCheckBox = true; 
 
 function displayResult() {
     superCheckBox = $(".super").prop('checked');
