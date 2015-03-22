@@ -155,7 +155,7 @@ function displayResult() {
     position: DOD,
     map: map,
     icon: pinImageDOD,
-    title: 'Click to zoom'
+    title: 'Department of Defence'
   });
     
    google.maps.event.addListener(markerDod, 'click', function() {
@@ -175,7 +175,7 @@ function displayResult() {
     position: booz,
     map: map,
     icon: pinImageBooz,
-    title: 'Click to zoom'
+    title: 'Booz Allen Hamilton'
   });
   
    google.maps.event.addListener(markerBooz, 'click', function() {
@@ -192,12 +192,14 @@ function displayResult() {
     position: geico,
     map: map,
     icon: pinImageGeico,
-    title: 'Click to zoom'
+    title: 'Geico'
   });
   
    google.maps.event.addListener(markerGeico, 'click', function() {
-    infoWindow(contentString('Geico', '1.4', '5260 Western Ave, Chevy Chase, MD 20815', 
-    'http://www.inhersight.com/company/geico ')).open(map, markerGeico);
+     info.close();
+     info = infoWindow(contentString('Geico', '1.4', '5260 Western Ave, Chevy Chase, MD 20815', 
+    'http://www.inhersight.com/company/geico '));
+    info.open(map, markerGeico);
   });
   
   //capital one
@@ -207,12 +209,14 @@ function displayResult() {
     position: capitalone,
     map: map,
     icon: pinImageCap,
-    title: 'Click to zoom'
+    title: 'Capital One'
   });
   
   google.maps.event.addListener(markerCap, 'click', function() {
-    infoWindow(contentString('Capital One', '4.1', '1680 Capital One Dr, McLean, VA 22102', 
-    'http://www.inhersight.com/company/capital-one ')).open(map, markerCap);
+    info.close();
+    info = infoWindow(contentString('Capital One', '4.1', '1680 Capital One Dr, McLean, VA 22102', 
+    'http://www.inhersight.com/company/capital-one '));
+    info.open(map, markerCap);
   });
 
   
@@ -223,12 +227,14 @@ function displayResult() {
     position: clark,
     map: map,
     icon: pinImageClark,
-    title: 'Click to zoom'
+    title: 'Clark Construction'
   });
   
    google.maps.event.addListener(markerClark, 'click', function() {
-    infoWindow(contentString('Clark Construction', '2.6', '7500 Old Georgetown Road  Bethesda, Maryland 20814', 
-    'http://www.inhersight.com/company/clark-construction-group-llc')).open(map, markerCap);
+    info.close();
+    info = infoWindow(contentString('Clark Construction', '2.6', '7500 Old Georgetown Road  Bethesda, Maryland 20814', 
+    'http://www.inhersight.com/company/clark-construction-group-llc'));
+    info.open(map, markerCap);
   });
 
   
@@ -241,12 +247,14 @@ function displayResult() {
     position: inovalon,
     map: map,
     icon: pinImageInov,
-    title: 'Click to zoom'
+    title: 'Inovalon'
   });
   
   google.maps.event.addListener(markerInovalon, 'click', function() {
-    infoWindow(contentString('Inovalon', '2.9', '4321 Collington Rd, Bowie, MD 20716',
-    'http://www.inhersight.com/company/inovalon')).open(map, markerInovalon);
+    info.close();
+    info = infoWindow(contentString('Inovalon', '2.9', '4321 Collington Rd, Bowie, MD 20716',
+    'http://www.inhersight.com/company/inovalon'));
+    info.open(map, markerInovalon);
   });
 
   
@@ -259,12 +267,14 @@ function displayResult() {
     position: Goog1,
     map: map,
     icon: pinImageGoogle,
-    title: 'Click to zoom'
+    title: 'Google'
   });
   
    google.maps.event.addListener(markerGoog1, 'click', function() {
-    infoWindow(contentString('Mountain View', '4.1', '1600 Amphitheatre Pkwy, Mountain View, CA 94043', 
-    'http://www.inhersight.com/company/mountain-view ')).open(map, markerGoog1);
+    info.close();
+    info = infoWindow(contentString('Mountain View', '4.1', '1600 Amphitheatre Pkwy, Mountain View, CA 94043', 
+    'http://www.inhersight.com/company/mountain-view '));
+    info.open(map, markerGoog1);
   });
   
   //facebook
@@ -274,12 +284,14 @@ function displayResult() {
     position: face,
     map: map,
     icon: pinImageFacebook,
-    title: 'Click to zoom'
+    title: 'Facebook'
   });
   
    google.maps.event.addListener(markerFace, 'click', function() {
-infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025', 
-    'http://www.inhersight.com/company/facebook ')).open(map, markerFace);
+    info.close();
+    info = infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025', 
+    'http://www.inhersight.com/company/facebook '));
+    info.open(map, markerFace);
   });
   
   //apple
@@ -289,12 +301,14 @@ infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025'
     position: apple,
     map: map,
     icon: pinImageApple,
-    title: 'Click to zoom'
+    title: 'Apple'
   });
   
   google.maps.event.addListener(markerApple, 'click', function() {
-infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014', 
-    'http://www.inhersight.com/company/apple ')).open(map, markerApple);
+  info.close();
+  info = infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014', 
+    'http://www.inhersight.com/company/apple '));
+    info.open(map, markerApple);
   });
   
   //cisco
@@ -304,12 +318,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: cisco,
     map: map,
     icon: pinImageCisco,
-    title: 'Click to zoom'
+    title: 'Cisco'
   });
   
    google.maps.event.addListener(markerCisco, 'click', function() {
-    infoWindow(contentString('Cisco', '3.7', '3700 Cisco Way San Jose, CA', 
-    'http://www.inhersight.com/company/cisco  ')).open(map, markerCisco);
+    info.close();
+    info = infoWindow(contentString('Cisco', '3.7', '3700 Cisco Way San Jose, CA', 
+    'http://www.inhersight.com/company/cisco  '));
+    info.open(map, markerCisco);
   });
   
   //intel
@@ -319,12 +335,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: intel,
     map: map,
     icon: pinImageIntel,
-    title: 'Click to zoom'
+    title: 'Intel'
   });
   
   google.maps.event.addListener(markerIntel, 'click', function() {
-    infoWindow(contentString('Intel', '4.0', '2200 Mission College Blvd, Santa Clara, CA 95054', 
-    'http://www.inhersight.com/company/intel ')).open(map, markerIntel);
+    info.close();
+    info = infoWindow(contentString('Intel', '4.0', '2200 Mission College Blvd, Santa Clara, CA 95054', 
+    'http://www.inhersight.com/company/intel '));
+    info.open(map, markerIntel);
   });
 
   
@@ -335,12 +353,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: yahoo,
     map: map,
     icon: pinImageYahoo,
-    title: 'Click to zoom'
+    title: 'Yahoo'
   });
   
    google.maps.event.addListener(markerYahoo, 'click', function() {
-    infoWindow(contentString('Yahoo', '3.5', '701 1st Ave, Sunnyvale, CA 94089', 
-    'http://www.inhersight.com/company/yahoo  ')).open(map, markerYahoo);
+    info.close();
+    info = infoWindow(contentString('Yahoo', '3.5', '701 1st Ave, Sunnyvale, CA 94089', 
+    'http://www.inhersight.com/company/yahoo  '));
+    info.open(map, markerYahoo);
   });
   
   //ebay
@@ -350,12 +370,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: ebay,
     map: map,
     icon: pinImageEbay,
-    title: 'Click to zoom'
+    title: 'Ebay'
   });
   
    google.maps.event.addListener(markerEbay, 'click', function() {
-    infoWindow(contentString('Ebay', '3.0', '2065 Hamilton Ave, San Jose, CA 95125', 
-    'http://www.inhersight.com/company/ebay ')).open(map, markerEbay);
+    info.close();
+    info = infoWindow(contentString('Ebay', '3.0', '2065 Hamilton Ave, San Jose, CA 95125', 
+    'http://www.inhersight.com/company/ebay '));
+    info.open(map, markerEbay);
   });
   
    //HP
@@ -365,12 +387,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: hp,
     map: map,
     icon: pinImageHP,
-    title: 'Click to zoom'
+    title: 'HP'
   });
   
    google.maps.event.addListener(markerHP, 'click', function() {
-    infoWindow(contentString('HP', '2.7', '3000 Hanover St. Palo Alto, CA 94303', 
-    'http://www.inhersight.com/company/hp ')).open(map, markerHP);
+    info.close();
+    info = infoWindow(contentString('HP', '2.7', '3000 Hanover St. Palo Alto, CA 94303', 
+    'http://www.inhersight.com/company/hp '));
+    info.open(map, markerHP);
   });
   
   //autodesk
@@ -380,11 +404,13 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: autodesk,
     map: map,
     icon: pinImageAuto,
-    title: 'Click to zoom'
+    title: 'Autodesk'
   });
   
   google.maps.event.addListener(markerAutodesk, 'click', function() {
-    infoWindow(contentString('Autodesk', '4.0', '111 McInnis Pkwy, San Rafael, CA 94903', 'http://www.inhersight.com/company/autodesk ')).open(map, markerAutodesk);
+    info.close();
+    info = infoWindow(contentString('Autodesk', '4.0', '111 McInnis Pkwy, San Rafael, CA 94903', 'http://www.inhersight.com/company/autodesk '));
+    info.open(map, markerAutodesk);
   });
   
   
@@ -397,7 +423,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: microsoft,
     map: map,
     icon: pinImageMicrosoft,
-    title: 'Click to zoom'
+    title: 'Microsoft'
+  });
+  
+   google.maps.event.addListener(markerMicro, 'click', function() {
+    info.close();
+    info = infoWindow(contentString('Microsoft', '3.2', '1 Microsoft Way Redmond, WA', 
+    'http://www.inhersight.com/company/microsoft '));
+    info.open(map, markerMicro);
   });
   
   //amazon
@@ -407,12 +440,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: amazon,
     map: map,
     icon: pinImageAmz,
-    title: 'Click to zoom'
+    title: 'Amazon'
   });
   
    google.maps.event.addListener(markerAmazon, 'click', function() {
-    infoWindow(contentString('Amazon’', '3.1', '440 Terry Ave N Seattle, WA 98109', 
-    'http://www.inhersight.com/company/amazon ')).open(map, markerAmazon);
+     info.close();
+    info = infoWindow(contentString('Amazon’', '3.1', '440 Terry Ave N Seattle, WA 98109', 
+    'http://www.inhersight.com/company/amazon '));
+    info.open(map, markerAmazon);
   });
   
 
@@ -426,12 +461,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: groupon,
     map: map,
     icon: pinImageGroup,
-    title: 'Click to zoom'
+    title: 'Groupon'
   });
   
    google.maps.event.addListener(markerGroup, 'click', function() {
-    infoWindow(contentString('Groupon', '2.7', '600 W Chicago Ave Ste 400, Chicago, IL 60654-2801', 
-    'http://www.inhersight.com/company/groupon ')).open(map, markerGroup);
+     info.close();
+    info = infoWindow(contentString('Groupon', '2.7', '600 W Chicago Ave Ste 400, Chicago, IL 60654-2801', 
+    'http://www.inhersight.com/company/groupon '));
+    info.open(map, markerGroup);
   });
   
   
@@ -445,12 +482,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: ibm,
     map: map,
     icon: pinImageIbm,
-    title: 'Click to zoom'
+    title: 'IBM'
   });
   
    google.maps.event.addListener(markerIbm, 'click', function() {
-    infoWindow(contentString('IBM', '3.5', '590 Madison Ave New York, NY', 
-    'http://www.inhersight.com/company/ibm ')).open(map, markerIbm);
+     info.close();
+    info = infoWindow(contentString('IBM', '3.5', '590 Madison Ave New York, NY', 
+    'http://www.inhersight.com/company/ibm '));
+    info.open(map, markerIbm);
   });
   
   //COLORADO
@@ -462,12 +501,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: zayo,
     map: map,
     icon: pinImageZayo,
-    title: 'Click to zoom'
+    title: 'Zayo Group'
   });
   
    google.maps.event.addListener(markerZayo, 'click', function() {
-    infoWindow(contentString('Zayo Group', '2.9', 'Twenty Ninth Street, 1805 29th St Suite 2050, Boulder, CO 80301', 
-    'http://www.inhersight.com/company/zayo ')).open(map, markerZayo);
+     info.close();
+    info = infoWindow(contentString('Zayo Group', '2.9', 'Twenty Ninth Street, 1805 29th St Suite 2050, Boulder, CO 80301', 
+    'http://www.inhersight.com/company/zayo '));
+    info.open(map, markerZayo);
   });
   
   //ARIZONA
@@ -479,12 +520,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: apollo,
     map: map,
     icon: pinImageApollo,
-    title: 'Click to zoom'
+    title: 'Apollo Education Group'
   });
   
   google.maps.event.addListener(markerApollo, 'click', function() {
-    infoWindow(contentString('Apollo Education Group', '3.3', '4025 S Riverpoint Pkwy, Phoenix, AZ 85040', 
-    'http://www.inhersight.com/company/apollo-education-group ')).open(map, markerApollo);
+     info.close();
+    info = infoWindow(contentString('Apollo Education Group', '3.3', '4025 S Riverpoint Pkwy, Phoenix, AZ 85040', 
+    'http://www.inhersight.com/company/apollo-education-group '));
+    info.open(map, markerApollo);
   });
   
   //OREGON
@@ -496,11 +539,13 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: nike,
     map: map,
     icon: pinImageNike,
-    title: 'Click to zoom'
+    title: 'Nike'
   });
   
   google.maps.event.addListener(markerNike, 'click', function() {
-    infoWindow(contentString('Nike', '3.0', '1 Bowerman Dr Beaverton, OR', 'http://www.inhersight.com/company/nike ')).open(map, markerNike);
+     info.close();
+    info = infoWindow(contentString('Nike', '3.0', '1 Bowerman Dr Beaverton, OR', 'http://www.inhersight.com/company/nike '));
+    info.open(map, markerNike);
   });
   
   //RHODE ISLAND
@@ -512,11 +557,13 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: cvs,
     map: map,
     icon: pinImageCvs,
-    title: 'Click to zoom'
+    title: 'CVS'
   });
   
   google.maps.event.addListener(markerCVS, 'click', function() {
-    infoWindow(contentString('CVS', '2.1', '1 CVS Dr, Woonsocket, RI 02895', 'http://www.inhersight.com/company/cvs-health ')).open(map, markerCVS);
+     info.close();
+    info = infoWindow(contentString('CVS', '2.1', '1 CVS Dr, Woonsocket, RI 02895', 'http://www.inhersight.com/company/cvs-health '));
+    info.open(map, markerCVS);
   });
   
   //fidelity
@@ -527,12 +574,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: fidelity,
     map: map,
     icon: pinImageFid,
-    title: 'Click to zoom'
+    title: 'Fidelity Investments'
   });
   
   google.maps.event.addListener(markerFid, 'click', function() {
-    infoWindow(contentString('Fidelity Investments', '2.9', '801 Boylston St, Boston, MA 02116', 
-    'http://www.inhersight.com/company/fidelity-investments  ')).open(map, markerFid);
+     info.close();
+    info = infoWindow(contentString('Fidelity Investments', '2.9', '801 Boylston St, Boston, MA 02116', 
+    'http://www.inhersight.com/company/fidelity-investments  '));
+    info.open(map, markerFid);
   });
   
   //abengoa
@@ -543,12 +592,14 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: abengoa,
     map: map,
     icon: pinImageAbe,
-    title: 'Click to zoom'
+    title: 'Abengoa'
   });
   
   google.maps.event.addListener(markerAbe, 'click', function() {
-    infoWindow(contentString('Abengoa Solar', '1.9', '1250 Simms St #101 Lakewood, CO 80401',
-    'http://www.inhersight.com/company/abengoa')).open(map, markerAbe);
+     info.close();
+    info = infoWindow(contentString('Abengoa Solar', '1.9', '1250 Simms St #101 Lakewood, CO 80401',
+    'http://www.inhersight.com/company/abengoa'));
+    info.open(map, markerAbe);
   });
   
   
@@ -562,15 +613,35 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
     position: vanguard,
     map: map,
     icon: pinImageVan,
-    title: 'Click to zoom'
+    title: 'Vanguard'
   });
   
    google.maps.event.addListener(markerVan, 'click', function() {
-    infoWindow(contentString('Vanguard', '2.9', '1041 W Valley Rd Wayne, PA', 
-    'http://www.inhersight.com/company/vanguard  ')).open(map, markerVan);
+     info.close();
+    info = infoWindow(contentString('Vanguard', '2.9', '1041 W Valley Rd Wayne, PA', 
+    'http://www.inhersight.com/company/vanguard  '));
+    info.open(map, markerVan);
   });
 
+  //abbott
   
+  var abbott = new google.maps.LatLng(42.3020749,-87.8913672)
+  var pinImageAbbott = colorRating(4.1);
+  var markerAbbott = new google.maps.Marker({
+    position: abbott,
+    map: map,
+    icon: pinImageAbbott,
+    title: 'Abbott'
+  });
+
+
+google.maps.event.addListener(markerAbbott, 'click', function() {
+  info.close();
+  info = infoWindow(contentString('Abbott', '4.1', '100 Abbott Park Road. AbbottPark, Illinois 60064-3500',
+'http://www.inhersight.com/company/abbott '));
+info.open(map, markerAbbott);
+});
+
 
 
 }
