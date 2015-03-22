@@ -159,9 +159,10 @@ function displayResult() {
   });
     
    google.maps.event.addListener(markerDod, 'click', function() {
-     
-     infoWindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
-    'http://www.inhersight.com/company/department-of-defense-dod')).open(map, markerDod);
+     info.close();
+     info = infoWindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
+    'http://www.inhersight.com/company/department-of-defense-dod'));
+    info.open(map, markerDod);
   });
   
     }
@@ -178,8 +179,10 @@ function displayResult() {
   });
   
    google.maps.event.addListener(markerBooz, 'click', function() {
-    infoWindow(contentString('Booz Allen Hamilton', '3.5', '8283 Greensboro Dr, McLean, VA 22102', 
-    'http://www.inhersight.com/company/booz-allen-hamilton  ')).open(map, markerBooz);
+     info.close();
+     info = infoWindow(contentString('Booz Allen Hamilton', '3.5', '8283 Greensboro Dr, McLean, VA 22102', 
+    'http://www.inhersight.com/company/booz-allen-hamilton  '));
+    info.open(map, markerBooz);
   });
   
   //Geico
