@@ -30,12 +30,13 @@
     
         
      <div id="description">
-     
-       
        <table height="30%">
          <tr>
            <td>
-             <p>Find the right job for you!</p>
+             <p>From Women to Women!
+               <br>
+               Are you We provide you a helpful vizualization map that 
+             </p>
            </td>
          </tr>
        </table>
@@ -46,6 +47,17 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
+    
+    function colorRating(double rating) {
+      if (rating >= 0 && rating < 2.5) {
+        return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF0000/");
+      }
+      else if (rating >= 2.5 && rating < 3.5) {
+        return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FFFF00/");
+      }
+      else
+      return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/008000/");
+    }
  
     
   function initialize() {
@@ -60,9 +72,11 @@
  //DC!
  //department of defence
   var DOD = new google.maps.LatLng(38.854213,-77.010467)
+  var pinImageDOD = colorRating(2.3);
   var markerDod = new google.maps.Marker({
     position: DOD,
     map: map,
+    icon: pinImageDOD,
     title: 'Click to zoom'
   });
   
