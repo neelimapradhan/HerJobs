@@ -144,6 +144,21 @@ function displayResult() {
       };
       
 
+  //click to zoom
+  function clickZoom(pin) {
+    google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+      window.setTimeout(function() {
+        map.panTo(pin.getPosition());
+      }, 3000);
+    });
+
+    google.maps.event.addListener(pin, 'click', function() {
+      map.setZoom(6);
+      map.setCenter(pin.getPosition());
+    });
+  }
 
  //DC!
  //department of defence
@@ -184,6 +199,8 @@ function displayResult() {
     'http://www.inhersight.com/company/booz-allen-hamilton  '));
     info.open(map, markerBooz);
   });
+    
+    clickZoom(markerBooz);
   
   //Geico
   var geico = new google.maps.LatLng(38.9612322,-77.0906919)
@@ -445,7 +462,7 @@ function displayResult() {
   
    google.maps.event.addListener(markerAmazon, 'click', function() {
      info.close();
-    info = infoWindow(contentString('Amazon’', '3.1', '440 Terry Ave N Seattle, WA 98109', 
+    info = infoWindow(contentString('Amazon', '3.1', '440 Terry Ave N Seattle, WA 98109', 
     'http://www.inhersight.com/company/amazon '));
     info.open(map, markerAmazon);
   });
