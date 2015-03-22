@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700,600italic,700italic' rel='stylesheet' type='text/css'>
     
    </head>
     <body bgcolor="#A3C4FF">
@@ -20,7 +20,7 @@
         height: 100%;
         width: 20%;
         background-color: antiquewhite;
-        font-family: 'Lato', sans-serif;
+       font-family: 'Josefin Slab', serif;
       }
    
      #map-canvas {
@@ -136,6 +136,7 @@ function displayResult() {
  //department of defence
     var DOD = new google.maps.LatLng(38.854213,-77.010467)
     if (almostFriendlyCheckBox) {
+      
   var pinImageDOD = colorRating(2.3);
   var markerDod = new google.maps.Marker({
     position: DOD,
