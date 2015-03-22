@@ -67,14 +67,12 @@ Not Friendly:<input type="checkbox" class="almost-friendly" checked/>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
 <script>
-var superCheckBox = true;
-var friendlyCheckBox = true;
-var almostFriendlyCheckBox = true; 
+var superCheckBox = $(".super").prop('checked');
+var friendlyCheckBox = $(".friendly").prop('checked');
+var almostFriendlyCheckBox = $(".friendly").prop('checked');
 
 function displayResult() {
-    superCheckBox = $(".super").prop('checked');
-    friendlyCheckBox = $(".friendly").prop('checked');
-    almostFriendlyCheckBox = $(".friendly").prop('checked');
+
     console.log(superCheckBox);
     console.log(friendlyCheckBox);
     console.log(almostFriendlyCheckBox);
