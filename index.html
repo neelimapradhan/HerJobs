@@ -48,11 +48,11 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
     
-    function colorRating(double rating) {
-      if (rating >= 0 && rating < 2.5) {
+    function colorRating(rating) {
+      if (rating >== 0 && rating < 2.5) {
         return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF0000/");
       }
-      else if (rating >= 2.5 && rating < 3.5) {
+      else if (rating >== 2.5 && rating < 3.5) {
         return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FFFF00/");
       }
       else
