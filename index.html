@@ -16,7 +16,7 @@
         display: inline-block;
         height: 100%;
         width: 20%;
-        background-color: antiquewhite;
+        background-color: lavenderblush;
       }
    
      #map-canvas {
@@ -54,7 +54,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
     
-    function colorRating(rating) {
+   //change color
+   function colorRating(rating) {
       if (rating >= 0 && rating < 2.5) {
         return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF0000/");
       }
@@ -64,8 +65,18 @@
       else
       return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/97BF42/");
     };
- 
     
+    //click info window
+    
+    function infoWindow(stringContent) {
+      return new google.maps.InfoWindow({
+        content: stringContent,
+        maxWidth: 200
+      });
+    };
+    
+ 
+   //initialize map! 
   function initialize() {
   var mapOptions = {
     zoom: 4,
@@ -74,17 +85,43 @@
 
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+      
+      
+      //content string
+      function contentString(name, ratingNum, address, link) {
+         return '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">'+name+'</h1>'+
+      '<div id="bodyContent">'+
+      </br>
+      </br>
+      '<p>Ratings: '+ratingNum+' </p>'+
+      '<p>Address: '+address+' </p>' +
+      '<p>Link:<a href="'+link+'"></a> </p>'+
+      '</div>'+
+      '</div>';
+      };
+      
+
 
  //DC!
  //department of defence
-  var DOD = new google.maps.LatLng(38.854213,-77.010467)
+    var DOD = new google.maps.LatLng(38.854213,-77.010467)
   var pinImageDOD = colorRating(2.3);
   var markerDod = new google.maps.Marker({
     position: DOD,
     map: map,
     icon: pinImageDOD,
     title: 'Click to zoom'
+
   });
+  
+   google.maps.event.addListener(markerDOD, 'click', function() {
+    infowindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
+    'www.inhersight.com/company/department-of-defense-dod')).open(map, markerDOD);
+  });
+  
   
   //booz
   var booz = new google.maps.LatLng(38.9225998,-77.2319233)
@@ -359,10 +396,6 @@
     }, 3000);
   });
 
-  google.maps.event.addListener(cvs, 'click', function() {
-    map.setZoom(8);
-    map.setCenter(marker.getPosition());
-  });
 }
 
 
