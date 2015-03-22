@@ -16,9 +16,13 @@
         padding: 0px
       }
     </style>
-    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-    <script>
+    
+    var context = $.getJSON("http://inhersight.com/", 
+    function(data)){
+      console.log(data);
+    });
 function initialize() {
   var mapOptions = {
     zoom: 4,
