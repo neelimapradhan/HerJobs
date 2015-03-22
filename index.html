@@ -20,11 +20,12 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
     
-    var context = $.getJSON("http://inhersight.com/", 
+    var data = $.getJSON("http://inhersight.com/", 
     function(data)){
       console.log(data);
     });
-function initialize() {
+    
+  function initialize() {
   var mapOptions = {
     zoom: 4,
     center: new google.maps.LatLng(38.8794, -99.3222)
