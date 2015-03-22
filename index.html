@@ -535,15 +535,7 @@ infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014',
   });
 
   
-  
 
-  google.maps.event.addListener(map, 'center_changed', function() {
-    // 3 seconds after the center of the map has changed, pan back to the
-    // marker.
-    window.setTimeout(function() {
-      map.panTo(marker.getPosition());
-    }, 3000);
-  });
 
 }
 
