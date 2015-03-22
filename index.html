@@ -148,7 +148,6 @@ function displayResult() {
   function clickZoom(pin) {
      google.maps.event.addListener(pin, 'click', function() {
       map.setZoom(6);
-      map.setCenter(pin.getPosition());
     });
   }
 
