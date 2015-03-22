@@ -56,7 +56,7 @@
         return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FFFF00/");
       }
       else
-      return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/008000/");
+      return new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/97BF42/");
     };
  
     
@@ -82,17 +82,21 @@
   
   //booz
   var booz = new google.maps.LatLng(38.9225998,-77.2319233)
+  var pinImageBooz = colorRating(3.5);
   var markerBooz = new google.maps.Marker({
     position: booz,
     map: map,
+    icon: pinImageBooz,
     title: 'Click to zoom'
   });
   
   //Geico
   var geico = new google.maps.LatLng(38.9612322,-77.0906919)
+  var pinImageGeico = colorRating(1.4);
   var markerGeico = new google.maps.Marker({
     position: geico,
     map: map,
+    icon: pinImageGeico,
     title: 'Click to zoom'
   });
   
@@ -108,17 +112,21 @@
   
   //clark
   var clark = new google.maps.LatLng(38.985023,-77.095176)
+  var pinImageClark = colorRating(2.6);
   var markerClark = new google.maps.Marker({
     position: clark,
     map: map,
+    icon: pinImageClark,
     title: 'Click to zoom'
   });
   
   //inovalon
   var inovalon = new google.maps.LatLng(38.947639,-76.733865)
+  var pinImageInov = colorRating(2.9);
   var markerInovalon = new google.maps.Marker({
     position: inovalon,
     map: map,
+    icon: pinImageInov,
     title: 'Click to zoom'
   });
   
@@ -126,109 +134,128 @@
   
   //google mountain view
   var Goog1 = new google.maps.LatLng(37.4224764,-122.0842499)
+  var pinImageGoogle = colorRating(4.1);
   var markerGoog1 = new google.maps.Marker({
     position: Goog1,
     map: map,
+    icon: pinImageGoogle,
     title: 'Click to zoom'
   });
   
   //facebook
   var face = new google.maps.LatLng(37.4841002,-122.1482519)
+  var pinImageFacebook = colorRating(4.6);
   var markerFace = new google.maps.Marker({
     position: face,
     map: map,
+    icon: pinImageFacebook,
     title: 'Click to zoom'
   });
   
   //apple
   var apple = new google.maps.LatLng(37.331741,-122.030332)
+  var pinImageApple = colorRating(2.7);
   var markerApple = new google.maps.Marker({
     position: apple,
     map: map,
+    icon: pinImageApple,
     title: 'Click to zoom'
   });
   
   //cisco
   var cisco = new google.maps.LatLng(37.4093373,-121.9261735)
+  var pinImageCisco = colorRating(3.7);
   var markerCisco = new google.maps.Marker({
     position: cisco,
     map: map,
+    icon: pinImageCisco,
     title: 'Click to zoom'
   });
   
   //intel
   var intel = new google.maps.LatLng(37.3875909,-121.9637869)
+  var pinImageIntel = colorRating(4.0);
   var markerIntel = new google.maps.Marker({
     position: intel,
     map: map,
+    icon: pinImageIntel,
     title: 'Click to zoom'
   });
   
   //yahoo
   var yahoo = new google.maps.LatLng(37.4171809,-122.025103)
+  var pinImageYahoo = colorRating(3.5);
   var markerYahoo = new google.maps.Marker({
     position: yahoo,
     map: map,
+    icon: pinImageYahoo,
     title: 'Click to zoom'
   });
   
   //ebay
   var ebay = new google.maps.LatLng(37.2954597,-121.9275512)
+  var pinImageEbay = colorRating(3.0);
   var markerEbay = new google.maps.Marker({
     position: ebay,
     map: map,
+    icon: pinImageEbay,
     title: 'Click to zoom'
   });
   
    //HP
   var hp = new google.maps.LatLng(37.4145618,-122.1462888)
+  var pinImageHP = colorRating(2.7);
   var markerHP = new google.maps.Marker({
     position: hp,
     map: map,
+    icon: pinImageHP,
     title: 'Click to zoom'
   });
   
   //autodesk
   var autodesk = new google.maps.LatLng(38.0054203,-122.5306773)
+  var pinImageAuto = colorRating(4.0);
   var markerAutodesk = new google.maps.Marker({
     position: autodesk,
     map: map,
+    icon: pinImageAuto,
     title: 'Click to zoom'
   });
   
-  //pinterest
-  var pinterest = new google.maps.LatLng(37.772996,-122.403742)
-  var markerPin = new google.maps.Marker({
-    position: pinterest,
-    map: map,
-    title: 'Click to zoom'
-  });
   
   //WASHINGTON STATE
   
   //microsoft
   var microsoft = new google.maps.LatLng(38.985023,-77.095176)
+  var pinImageMicrosoft = colorRating(3.2);
   var markerMicro = new google.maps.Marker({
     position: microsoft,
     map: map,
+    icon: pinImageMicrosoft,
     title: 'Click to zoom'
   });
   
   //amazon
   var amazon = new google.maps.LatLng(47.622952,-122.336519)
+  var pinImageAmz = colorRating(3.1);
   var markerAmazon = new google.maps.Marker({
     position: amazon,
     map: map,
+    icon: pinImageAmz,
     title: 'Click to zoom'
   });
   
 
   
    //TEXAS
+   
+   //groupon
   var groupon = new google.maps.LatLng(41.8969173,-87.64354)
+  var pinImageGroup = colorRating(2.7);
   var markerGroup = new google.maps.Marker({
     position: groupon,
     map: map,
+    icon: pinImageGroup,
     title: 'Click to zoom'
   });
   
@@ -238,9 +265,11 @@
    
    //ibm
   var ibm = new google.maps.LatLng(40.7621749,-73.9728615)
+  var pinImageIbm = colorRating(3.5);
   var markerIbm = new google.maps.Marker({
     position: ibm,
     map: map,
+    icon: pinImageIbm,
     title: 'Click to zoom'
   });
   
@@ -248,9 +277,11 @@
   
   //zayo
   var zayo = new google.maps.LatLng(40.018653,-105.256396)
+  var pinImageZayo = colorRating(2.9);
   var markerZayo = new google.maps.Marker({
     position: zayo,
     map: map,
+    icon: pinImageZayo,
     title: 'Click to zoom'
   });
   
@@ -258,9 +289,11 @@
   
   //apollo
   var apollo = new google.maps.LatLng(33.4124814,-112.0141543)
+  var pinImageApollo = colorRating(3.3);
   var markerApollo = new google.maps.Marker({
     position: apollo,
     map: map,
+    icon: pinImageApollo,
     title: 'Click to zoom'
   });
   
@@ -268,9 +301,11 @@
   
   //nike
   var nike = new google.maps.LatLng(45.5075727,-122.8271301)
+  var pinImageNike = colorRating(3.0);
   var markerNike = new google.maps.Marker({
     position: nike,
     map: map,
+    icon: pinImageNike,
     title: 'Click to zoom'
   });
   
@@ -278,11 +313,36 @@
   
   //cvs health
   var cvs = new google.maps.LatLng(41.990756,-71.477265)
+  var pinImageCvs = colorRating(2.1);
   var markerCVS = new google.maps.Marker({
     position: cvs,
     map: map,
+    icon: pinImageCvs,
     title: 'Click to zoom'
   });
+  
+  //fidelity
+  
+  var fidelity = new google.maps.LatLng(42.349119,-71.082163)
+  var pinImageFid = colorRating(2.9);
+  var markerFid = new google.maps.Marker({
+    position: fidelity,
+    map: map,
+    icon: pinImageFid,
+    title: 'Click to zoom'
+  });
+  
+  //Vanguard
+  
+  var vanguard = new google.maps.LatLng(40.072565,-75.4235)
+  var pinImageVan = colorRating(2.9);
+  var markerVan = new google.maps.Marker({
+    position: vanguard,
+    map: map,
+    icon: pinImageVan,
+    title: 'Click to zoom'
+  });
+  
   
 
   google.maps.event.addListener(map, 'center_changed', function() {
