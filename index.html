@@ -75,9 +75,8 @@ function displayResult() {
  superCheckBox = $(".super").prop('checked');
  friendlyCheckBox = $(".friendly").prop('checked');
  almostFriendlyCheckBox = $(".almost-friendly").prop('checked');
-    console.log(superCheckBox);
-    console.log(friendlyCheckBox);
-    console.log(almostFriendlyCheckBox);
+ initialize();
+ 
 }
 
 </script>
@@ -161,20 +160,20 @@ function displayResult() {
     var DOD = new google.maps.LatLng(38.854213,-77.010467)
     if (almostFriendlyCheckBox) {
       
-  var pinImageDOD = colorRating(2.3);
-  var markerDod = new google.maps.Marker({
-    position: DOD,
-    map: map,
-    icon: pinImageDOD,
-    title: 'Department of Defence'
-  });
-    
-   google.maps.event.addListener(markerDod, 'click', function() {
-     info.close();
-     info = infoWindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
-    'http://www.inhersight.com/company/department-of-defense-dod'));
-    info.open(map, markerDod);
-  });
+        var pinImageDOD = colorRating(2.3);
+        var markerDod = new google.maps.Marker({
+          position: DOD,
+          map: map,
+          icon: pinImageDOD,
+          title: 'Department of Defence'
+        });
+          
+         google.maps.event.addListener(markerDod, 'click', function() {
+           info.close();
+           info = infoWindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
+          'http://www.inhersight.com/company/department-of-defense-dod'));
+          info.open(map, markerDod);
+        });
   
     }
   
