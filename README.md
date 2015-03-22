@@ -1,1 +1,1 @@
-http://www.neelimapradhan.github.io
+neelimapradhan.github.io
