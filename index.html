@@ -154,12 +154,18 @@
   //capital one
   var capitalone = new google.maps.LatLng(38.9257487,-77.212276)
   var pinImageCap = colorRating(4.1);
-  var markerGeico = new google.maps.Marker({
+  var markerCap = new google.maps.Marker({
     position: capitalone,
     map: map,
     icon: pinImageCap,
     title: 'Click to zoom'
   });
+  
+  google.maps.event.addListener(markerCap, 'click', function() {
+    infoWindow(contentString('Capital One', '4.1', '1680 Capital One Dr, McLean, VA 22102', 
+    'http://www.inhersight.com/company/capital-one ')).open(map, markerCap);
+  });
+
   
   //clark
   var clark = new google.maps.LatLng(38.985023,-77.095176)
@@ -170,6 +176,14 @@
     icon: pinImageClark,
     title: 'Click to zoom'
   });
+  
+   google.maps.event.addListener(markerClark, 'click', function() {
+    infoWindow(contentString('Clark Construction', '2.6', '7500 Old Georgetown Road  Bethesda, Maryland 20814', 
+    'http://www.inhersight.com/company/clark-construction-group-llc')).open(map, markerCap);
+  });
+
+  
+ 
   
   //inovalon
   var inovalon = new google.maps.LatLng(38.947639,-76.733865)
@@ -253,6 +267,11 @@
     title: 'Click to zoom'
   });
   
+   google.maps.event.addListener(markerEbay, 'click', function() {
+    infoWindow(contentString('Ebay', '3.0', '2065 Hamilton Ave, San Jose, CA 95125', 
+    'http://www.inhersight.com/company/ebay ')).open(map, markerEbay);
+  });
+  
    //HP
   var hp = new google.maps.LatLng(37.4145618,-122.1462888)
   var pinImageHP = colorRating(2.7);
@@ -298,7 +317,7 @@
   
 
   
-   //TEXAS
+   //CHICAGO
    
    //groupon
   var groupon = new google.maps.LatLng(41.8969173,-87.64354)
@@ -308,6 +327,11 @@
     map: map,
     icon: pinImageGroup,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerGroup, 'click', function() {
+    infoWindow(contentString('Groupon', '2.7', '600 W Chicago Ave Ste 400, Chicago, IL 60654-2801', 
+    'http://www.inhersight.com/company/groupon ')).open(map, markerGroup);
   });
   
   
@@ -334,6 +358,11 @@
     map: map,
     icon: pinImageZayo,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerZayo, 'click', function() {
+    infoWindow(contentString('Zayo Group', '2.9', 'Twenty Ninth Street, 1805 29th St Suite 2050, Boulder, CO 80301', 
+    'http://www.inhersight.com/company/zayo ')).open(map, markerZayo);
   });
   
   //ARIZONA
@@ -383,6 +412,12 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerFid, 'click', function() {
+    infoWindow(contentString('Fidelity Investments', '2.9', '801 Boylston St, Boston, MA 02116', 
+    'http://www.inhersight.com/company/fidelity-investments  ')).open(map, markerFid);
+  });
+
+  
   //Vanguard
   
   var vanguard = new google.maps.LatLng(40.072565,-75.4235)
@@ -393,6 +428,12 @@
     icon: pinImageVan,
     title: 'Click to zoom'
   });
+  
+   google.maps.event.addListener(markerVan, 'click', function() {
+    infoWindow(contentString(‘Vanguard', '2.9', '1041 W Valley Rd Wayne, PA', 
+    'http://www.inhersight.com/company/vanguard  ')).open(map, markerVan);
+  });
+
   
   
 
