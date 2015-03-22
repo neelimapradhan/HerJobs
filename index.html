@@ -131,6 +131,11 @@
     title: 'Click to zoom'
   });
   
+   google.maps.event.addListener(markerBooz, 'click', function() {
+    infoWindow(contentString('Booz Allen Hamilton', '3.5', '8283 Greensboro Dr, McLean, VA 22102', 
+    'http://www.inhersight.com/company/booz-allen-hamilton  ')).open(map, markerBooz);
+  });
+  
   //Geico
   var geico = new google.maps.LatLng(38.9612322,-77.0906919)
   var pinImageGeico = colorRating(1.4);
@@ -139,6 +144,11 @@
     map: map,
     icon: pinImageGeico,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerGeico, 'click', function() {
+    infoWindow(contentString('Geico', '1.4', '5260 Western Ave, Chevy Chase, MD 20815', 
+    'http://www.inhersight.com/company/geico ')).open(map, markerGeico);
   });
   
   //capital one
