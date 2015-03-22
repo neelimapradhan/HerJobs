@@ -218,484 +218,503 @@ function displayResult() {
         clickZoom(markerGeico);
   }  
   //capital one
-  var capitalone = new google.maps.LatLng(38.9257487,-77.212276)
-  var pinImageCap = colorRating(4.1);
-  var markerCap = new google.maps.Marker({
-    position: capitalone,
-    map: map,
-    icon: pinImageCap,
-    title: 'Capital One'
-  });
-  
-  google.maps.event.addListener(markerCap, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Capital One', '4.1', '1680 Capital One Dr, McLean, VA 22102', 
-    'http://www.inhersight.com/company/capital-one '));
-    info.open(map, markerCap);
-  });
-
-  clickZoom(markerCap);
-  
+  if(superCheckBox){
+      var capitalone = new google.maps.LatLng(38.9257487,-77.212276)
+      var pinImageCap = colorRating(4.1);
+      var markerCap = new google.maps.Marker({
+        position: capitalone,
+        map: map,
+        icon: pinImageCap,
+        title: 'Capital One'
+      });
+      
+      google.maps.event.addListener(markerCap, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Capital One', '4.1', '1680 Capital One Dr, McLean, VA 22102', 
+        'http://www.inhersight.com/company/capital-one '));
+        info.open(map, markerCap);
+      });
+    
+      clickZoom(markerCap);
+  }
   //clark
-  var clark = new google.maps.LatLng(38.985023,-77.095176)
-  var pinImageClark = colorRating(2.6);
-  var markerClark = new google.maps.Marker({
-    position: clark,
-    map: map,
-    icon: pinImageClark,
-    title: 'Clark Construction'
-  });
-  
-   google.maps.event.addListener(markerClark, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Clark Construction', '2.6', '7500 Old Georgetown Road  Bethesda, Maryland 20814', 
-    'http://www.inhersight.com/company/clark-construction-group-llc'));
-    info.open(map, markerClark);
-  });
-
-  clickZoom(markerClark);
- 
+  if(friendlyCheckBox){
+      var clark = new google.maps.LatLng(38.985023,-77.095176)
+      var pinImageClark = colorRating(2.6);
+      var markerClark = new google.maps.Marker({
+        position: clark,
+        map: map,
+        icon: pinImageClark,
+        title: 'Clark Construction'
+      });
+      
+       google.maps.event.addListener(markerClark, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Clark Construction', '2.6', '7500 Old Georgetown Road  Bethesda, Maryland 20814', 
+        'http://www.inhersight.com/company/clark-construction-group-llc'));
+        info.open(map, markerClark);
+      });
+    
+      clickZoom(markerClark);
+  }
   
   //inovalon
-  var inovalon = new google.maps.LatLng(38.947639,-76.733865)
-  var pinImageInov = colorRating(2.9);
-  var markerInovalon = new google.maps.Marker({
-    position: inovalon,
-    map: map,
-    icon: pinImageInov,
-    title: 'Inovalon'
-  });
-  
-  google.maps.event.addListener(markerInovalon, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Inovalon', '2.9', '4321 Collington Rd, Bowie, MD 20716',
-    'http://www.inhersight.com/company/inovalon'));
-    info.open(map, markerInovalon);
-  });
-
-  clickZoom(markerInovalon);
-  
+  if(friendlyCheckBox){
+      var inovalon = new google.maps.LatLng(38.947639,-76.733865)
+      var pinImageInov = colorRating(2.9);
+      var markerInovalon = new google.maps.Marker({
+        position: inovalon,
+        map: map,
+        icon: pinImageInov,
+        title: 'Inovalon'
+      });
+      
+      google.maps.event.addListener(markerInovalon, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Inovalon', '2.9', '4321 Collington Rd, Bowie, MD 20716',
+        'http://www.inhersight.com/company/inovalon'));
+        info.open(map, markerInovalon);
+      });
+    
+      clickZoom(markerInovalon);
+  }
   //CALI
   
   //google mountain view
-  var Goog1 = new google.maps.LatLng(37.4224764,-122.0842499)
-  var pinImageGoogle = colorRating(4.1);
-  var markerGoog1 = new google.maps.Marker({
-    position: Goog1,
-    map: map,
-    icon: pinImageGoogle,
-    title: 'Google'
-  });
-  
-   google.maps.event.addListener(markerGoog1, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Mountain View', '4.1', '1600 Amphitheatre Pkwy, Mountain View, CA 94043', 
-    'http://www.inhersight.com/company/mountain-view '));
-    info.open(map, markerGoog1);
-  });
-  
-  clickZoom(markerGoog1);
-  
+  if(superCheckBox){
+      var Goog1 = new google.maps.LatLng(37.4224764,-122.0842499)
+      var pinImageGoogle = colorRating(4.1);
+      var markerGoog1 = new google.maps.Marker({
+        position: Goog1,
+        map: map,
+        icon: pinImageGoogle,
+        title: 'Google'
+      });
+      
+       google.maps.event.addListener(markerGoog1, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Mountain View', '4.1', '1600 Amphitheatre Pkwy, Mountain View, CA 94043', 
+        'http://www.inhersight.com/company/mountain-view '));
+        info.open(map, markerGoog1);
+      });
+      
+      clickZoom(markerGoog1);
+  }
   //facebook
-  var face = new google.maps.LatLng(37.4841002,-122.1482519)
-  var pinImageFacebook = colorRating(4.6);
-  var markerFace = new google.maps.Marker({
-    position: face,
-    map: map,
-    icon: pinImageFacebook,
-    title: 'Facebook'
-  });
-  
-   google.maps.event.addListener(markerFace, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025', 
-    'http://www.inhersight.com/company/facebook '));
-    info.open(map, markerFace);
-  });
-  
-  clickZoom(markerFace);
-  
+  if(superCheckBox){
+      var face = new google.maps.LatLng(37.4841002,-122.1482519)
+      var pinImageFacebook = colorRating(4.6);
+      var markerFace = new google.maps.Marker({
+        position: face,
+        map: map,
+        icon: pinImageFacebook,
+        title: 'Facebook'
+      });
+      
+       google.maps.event.addListener(markerFace, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025', 
+        'http://www.inhersight.com/company/facebook '));
+        info.open(map, markerFace);
+      });
+      
+      clickZoom(markerFace);
+  }
   //apple
-  var apple = new google.maps.LatLng(37.331741,-122.030332)
-  var pinImageApple = colorRating(2.7);
-  var markerApple = new google.maps.Marker({
-    position: apple,
-    map: map,
-    icon: pinImageApple,
-    title: 'Apple'
-  });
-  
-  google.maps.event.addListener(markerApple, 'click', function() {
-  info.close();
-  info = infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014', 
-    'http://www.inhersight.com/company/apple '));
-    info.open(map, markerApple);
-  });
-  
-  clickZoom(markerApple);
+  if(friendlyCheckBox){
+      var apple = new google.maps.LatLng(37.331741,-122.030332)
+      var pinImageApple = colorRating(2.7);
+      var markerApple = new google.maps.Marker({
+        position: apple,
+        map: map,
+        icon: pinImageApple,
+        title: 'Apple'
+      });
+      
+      google.maps.event.addListener(markerApple, 'click', function() {
+      info.close();
+      info = infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014', 
+        'http://www.inhersight.com/company/apple '));
+        info.open(map, markerApple);
+      });
+      
+      clickZoom(markerApple);
+  }
   
   //cisco
-  var cisco = new google.maps.LatLng(37.4093373,-121.9261735)
-  var pinImageCisco = colorRating(3.7);
-  var markerCisco = new google.maps.Marker({
-    position: cisco,
-    map: map,
-    icon: pinImageCisco,
-    title: 'Cisco'
-  });
-  
-   google.maps.event.addListener(markerCisco, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Cisco', '3.7', '3700 Cisco Way San Jose, CA', 
-    'http://www.inhersight.com/company/cisco  '));
-    info.open(map, markerCisco);
-  });
-  
-  clickZoom(markerCisco);
-  
+  if(superCheckBox){
+      var cisco = new google.maps.LatLng(37.4093373,-121.9261735)
+      var pinImageCisco = colorRating(3.7);
+      var markerCisco = new google.maps.Marker({
+        position: cisco,
+        map: map,
+        icon: pinImageCisco,
+        title: 'Cisco'
+      });
+      
+       google.maps.event.addListener(markerCisco, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Cisco', '3.7', '3700 Cisco Way San Jose, CA', 
+        'http://www.inhersight.com/company/cisco  '));
+        info.open(map, markerCisco);
+      });
+      
+      clickZoom(markerCisco);
+  }
   //intel
-  var intel = new google.maps.LatLng(37.3875909,-121.9637869)
-  var pinImageIntel = colorRating(4.0);
-  var markerIntel = new google.maps.Marker({
-    position: intel,
-    map: map,
-    icon: pinImageIntel,
-    title: 'Intel'
-  });
-  
-  google.maps.event.addListener(markerIntel, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Intel', '4.0', '2200 Mission College Blvd, Santa Clara, CA 95054', 
-    'http://www.inhersight.com/company/intel '));
-    info.open(map, markerIntel);
-  });
-
-  clickZoom(markerIntel);
-  
+  if(superCheckBox){
+      var intel = new google.maps.LatLng(37.3875909,-121.9637869)
+      var pinImageIntel = colorRating(4.0);
+      var markerIntel = new google.maps.Marker({
+        position: intel,
+        map: map,
+        icon: pinImageIntel,
+        title: 'Intel'
+      });
+      
+      google.maps.event.addListener(markerIntel, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Intel', '4.0', '2200 Mission College Blvd, Santa Clara, CA 95054', 
+        'http://www.inhersight.com/company/intel '));
+        info.open(map, markerIntel);
+      });
+    
+      clickZoom(markerIntel);
+  }
   //yahoo
-  var yahoo = new google.maps.LatLng(37.4171809,-122.025103)
-  var pinImageYahoo = colorRating(3.5);
-  var markerYahoo = new google.maps.Marker({
-    position: yahoo,
-    map: map,
-    icon: pinImageYahoo,
-    title: 'Yahoo'
-  });
-  
-   google.maps.event.addListener(markerYahoo, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Yahoo', '3.5', '701 1st Ave, Sunnyvale, CA 94089', 
-    'http://www.inhersight.com/company/yahoo  '));
-    info.open(map, markerYahoo);
-  });
-  
-  clickZoom(markerYahoo);
-  
+  if(superCheckBox){
+      var yahoo = new google.maps.LatLng(37.4171809,-122.025103)
+      var pinImageYahoo = colorRating(3.5);
+      var markerYahoo = new google.maps.Marker({
+        position: yahoo,
+        map: map,
+        icon: pinImageYahoo,
+        title: 'Yahoo'
+      });
+      
+       google.maps.event.addListener(markerYahoo, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Yahoo', '3.5', '701 1st Ave, Sunnyvale, CA 94089', 
+        'http://www.inhersight.com/company/yahoo  '));
+        info.open(map, markerYahoo);
+      });
+      
+      clickZoom(markerYahoo);
+  }
   //ebay
-  var ebay = new google.maps.LatLng(37.2954597,-121.9275512)
-  var pinImageEbay = colorRating(3.0);
-  var markerEbay = new google.maps.Marker({
-    position: ebay,
-    map: map,
-    icon: pinImageEbay,
-    title: 'Ebay'
-  });
-  
-   google.maps.event.addListener(markerEbay, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Ebay', '3.0', '2065 Hamilton Ave, San Jose, CA 95125', 
-    'http://www.inhersight.com/company/ebay '));
-    info.open(map, markerEbay);
-  });
-  
-  clickZoom(markerEbay);
-  
+  if(friendlyCheckBox){
+      var ebay = new google.maps.LatLng(37.2954597,-121.9275512)
+      var pinImageEbay = colorRating(3.0);
+      var markerEbay = new google.maps.Marker({
+        position: ebay,
+        map: map,
+        icon: pinImageEbay,
+        title: 'Ebay'
+      });
+      
+       google.maps.event.addListener(markerEbay, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Ebay', '3.0', '2065 Hamilton Ave, San Jose, CA 95125', 
+        'http://www.inhersight.com/company/ebay '));
+        info.open(map, markerEbay);
+      });
+      
+      clickZoom(markerEbay);
+  }
    //HP
-  var hp = new google.maps.LatLng(37.4145618,-122.1462888)
-  var pinImageHP = colorRating(2.7);
-  var markerHP = new google.maps.Marker({
-    position: hp,
-    map: map,
-    icon: pinImageHP,
-    title: 'HP'
-  });
-  
-   google.maps.event.addListener(markerHP, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('HP', '2.7', '3000 Hanover St. Palo Alto, CA 94303', 
-    'http://www.inhersight.com/company/hp '));
-    info.open(map, markerHP);
-  });
-  
-  clickZoom(markerHP);
-  
+  if(friendlyCheckBox){
+    var hp = new google.maps.LatLng(37.4145618,-122.1462888)
+    var pinImageHP = colorRating(2.7);
+    var markerHP = new google.maps.Marker({
+      position: hp,
+      map: map,
+      icon: pinImageHP,
+      title: 'HP'
+    });
+    
+     google.maps.event.addListener(markerHP, 'click', function() {
+      info.close();
+      info = infoWindow(contentString('HP', '2.7', '3000 Hanover St. Palo Alto, CA 94303', 
+      'http://www.inhersight.com/company/hp '));
+      info.open(map, markerHP);
+    });
+    
+    clickZoom(markerHP);
+  }
   //autodesk
-  var autodesk = new google.maps.LatLng(38.0054203,-122.5306773)
-  var pinImageAuto = colorRating(4.0);
-  var markerAutodesk = new google.maps.Marker({
-    position: autodesk,
-    map: map,
-    icon: pinImageAuto,
-    title: 'Autodesk'
-  });
-  
-  google.maps.event.addListener(markerAutodesk, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Autodesk', '4.0', '111 McInnis Pkwy, San Rafael, CA 94903', 'http://www.inhersight.com/company/autodesk '));
-    info.open(map, markerAutodesk);
-  });
-  
-  clickZoom(markerAutodesk);
-  
+  if(superCheckBox){
+      var autodesk = new google.maps.LatLng(38.0054203,-122.5306773)
+      var pinImageAuto = colorRating(4.0);
+      var markerAutodesk = new google.maps.Marker({
+        position: autodesk,
+        map: map,
+        icon: pinImageAuto,
+        title: 'Autodesk'
+      });
+      
+      google.maps.event.addListener(markerAutodesk, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Autodesk', '4.0', '111 McInnis Pkwy, San Rafael, CA 94903', 'http://www.inhersight.com/company/autodesk '));
+        info.open(map, markerAutodesk);
+      });
+      
+      clickZoom(markerAutodesk);
+  }
   //WASHINGTON STATE
   
   //microsoft
-  var microsoft = new google.maps.LatLng(47.63958,-122.12838)
-  var pinImageMicrosoft = colorRating(3.2);
-  var markerMicro = new google.maps.Marker({
-    position: microsoft,
-    map: map,
-    icon: pinImageMicrosoft,
-    title: 'Microsoft'
-  });
-  
-   google.maps.event.addListener(markerMicro, 'click', function() {
-    info.close();
-    info = infoWindow(contentString('Microsoft', '3.2', '1 Microsoft Way Redmond, WA', 
-    'http://www.inhersight.com/company/microsoft '));
-    info.open(map, markerMicro);
-  });
-  
-  clickZoom(markerMicro);
-  
+  if(friendlyCheckBox){
+      var microsoft = new google.maps.LatLng(47.63958,-122.12838)
+      var pinImageMicrosoft = colorRating(3.2);
+      var markerMicro = new google.maps.Marker({
+        position: microsoft,
+        map: map,
+        icon: pinImageMicrosoft,
+        title: 'Microsoft'
+      });
+      
+       google.maps.event.addListener(markerMicro, 'click', function() {
+        info.close();
+        info = infoWindow(contentString('Microsoft', '3.2', '1 Microsoft Way Redmond, WA', 
+        'http://www.inhersight.com/company/microsoft '));
+        info.open(map, markerMicro);
+      });
+      
+      clickZoom(markerMicro);
+  }
   //amazon
-  var amazon = new google.maps.LatLng(47.622952,-122.336519)
-  var pinImageAmz = colorRating(3.1);
-  var markerAmazon = new google.maps.Marker({
-    position: amazon,
-    map: map,
-    icon: pinImageAmz,
-    title: 'Amazon'
-  });
-  
-   google.maps.event.addListener(markerAmazon, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Amazon', '3.1', '440 Terry Ave N Seattle, WA 98109', 
-    'http://www.inhersight.com/company/amazon '));
-    info.open(map, markerAmazon);
-  });
-  
-  clickZoom(markerAmazon);
-  
+  if(friendlyCheckBox){
+    var amazon = new google.maps.LatLng(47.622952,-122.336519)
+    var pinImageAmz = colorRating(3.1);
+    var markerAmazon = new google.maps.Marker({
+      position: amazon,
+      map: map,
+      icon: pinImageAmz,
+      title: 'Amazon'
+    });
+    
+     google.maps.event.addListener(markerAmazon, 'click', function() {
+       info.close();
+      info = infoWindow(contentString('Amazon', '3.1', '440 Terry Ave N Seattle, WA 98109', 
+      'http://www.inhersight.com/company/amazon '));
+      info.open(map, markerAmazon);
+    });
+    
+    clickZoom(markerAmazon);
+  }
 
   
    //CHICAGO
-   
-   //groupon
-  var groupon = new google.maps.LatLng(41.8969173,-87.64354)
-  var pinImageGroup = colorRating(2.7);
-  var markerGroup = new google.maps.Marker({
-    position: groupon,
-    map: map,
-    icon: pinImageGroup,
-    title: 'Groupon'
-  });
-  
-   google.maps.event.addListener(markerGroup, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Groupon', '2.7', '600 W Chicago Ave Ste 400, Chicago, IL 60654-2801', 
-    'http://www.inhersight.com/company/groupon '));
-    info.open(map, markerGroup);
-  });
-  
-  clickZoom(markerGroup);
-  
+   if(friendlyCheckBox){
+       //groupon
+      var groupon = new google.maps.LatLng(41.8969173,-87.64354)
+      var pinImageGroup = colorRating(2.7);
+      var markerGroup = new google.maps.Marker({
+        position: groupon,
+        map: map,
+        icon: pinImageGroup,
+        title: 'Groupon'
+      });
+      
+       google.maps.event.addListener(markerGroup, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Groupon', '2.7', '600 W Chicago Ave Ste 400, Chicago, IL 60654-2801', 
+        'http://www.inhersight.com/company/groupon '));
+        info.open(map, markerGroup);
+      });
+      
+      clickZoom(markerGroup);
+   }
    //NEWYORK
    
    //ibm
-  var ibm = new google.maps.LatLng(40.7621749,-73.9728615)
-  var pinImageIbm = colorRating(3.5);
-  var markerIbm = new google.maps.Marker({
-    position: ibm,
-    map: map,
-    icon: pinImageIbm,
-    title: 'IBM'
-  });
-  
-   google.maps.event.addListener(markerIbm, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('IBM', '3.5', '590 Madison Ave New York, NY', 
-    'http://www.inhersight.com/company/ibm '));
-    info.open(map, markerIbm);
-  });
-  
-  clickZoom(markerIbm);
-  
+  if(superCheckBox){
+      var ibm = new google.maps.LatLng(40.7621749,-73.9728615)
+      var pinImageIbm = colorRating(3.5);
+      var markerIbm = new google.maps.Marker({
+        position: ibm,
+        map: map,
+        icon: pinImageIbm,
+        title: 'IBM'
+      });
+      
+       google.maps.event.addListener(markerIbm, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('IBM', '3.5', '590 Madison Ave New York, NY', 
+        'http://www.inhersight.com/company/ibm '));
+        info.open(map, markerIbm);
+      });
+      
+      clickZoom(markerIbm);
+  }
   //COLORADO
   
   //zayo
-  var zayo = new google.maps.LatLng(40.018653,-105.256396)
-  var pinImageZayo = colorRating(2.9);
-  var markerZayo = new google.maps.Marker({
-    position: zayo,
-    map: map,
-    icon: pinImageZayo,
-    title: 'Zayo Group'
-  });
-  
-   google.maps.event.addListener(markerZayo, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Zayo Group', '2.9', 'Twenty Ninth Street, 1805 29th St Suite 2050, Boulder, CO 80301', 
-    'http://www.inhersight.com/company/zayo '));
-    info.open(map, markerZayo);
-  });
-  
-  clickZoom(markerZayo);
-  
+  if(friendlyCheckBox){
+      var zayo = new google.maps.LatLng(40.018653,-105.256396)
+      var pinImageZayo = colorRating(2.9);
+      var markerZayo = new google.maps.Marker({
+        position: zayo,
+        map: map,
+        icon: pinImageZayo,
+        title: 'Zayo Group'
+      });
+      
+       google.maps.event.addListener(markerZayo, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Zayo Group', '2.9', 'Twenty Ninth Street, 1805 29th St Suite 2050, Boulder, CO 80301', 
+        'http://www.inhersight.com/company/zayo '));
+        info.open(map, markerZayo);
+      });
+      
+      clickZoom(markerZayo);
+  }
   //ARIZONA
   
   //apollo
-  var apollo = new google.maps.LatLng(33.4124814,-112.0141543)
-  var pinImageApollo = colorRating(3.3);
-  var markerApollo = new google.maps.Marker({
-    position: apollo,
-    map: map,
-    icon: pinImageApollo,
-    title: 'Apollo Education Group'
-  });
-  
-  google.maps.event.addListener(markerApollo, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Apollo Education Group', '3.3', '4025 S Riverpoint Pkwy, Phoenix, AZ 85040', 
-    'http://www.inhersight.com/company/apollo-education-group '));
-    info.open(map, markerApollo);
-  });
-  
-  clickZoom(markerApollo);
-  
+  if(friendlyCheckBox){
+      var apollo = new google.maps.LatLng(33.4124814,-112.0141543)
+      var pinImageApollo = colorRating(3.3);
+      var markerApollo = new google.maps.Marker({
+        position: apollo,
+        map: map,
+        icon: pinImageApollo,
+        title: 'Apollo Education Group'
+      });
+      
+      google.maps.event.addListener(markerApollo, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Apollo Education Group', '3.3', '4025 S Riverpoint Pkwy, Phoenix, AZ 85040', 
+        'http://www.inhersight.com/company/apollo-education-group '));
+        info.open(map, markerApollo);
+      });
+      
+      clickZoom(markerApollo);
+  }
   //OREGON
   
   //nike
-  var nike = new google.maps.LatLng(45.5075727,-122.8271301)
-  var pinImageNike = colorRating(3.0);
-  var markerNike = new google.maps.Marker({
-    position: nike,
-    map: map,
-    icon: pinImageNike,
-    title: 'Nike'
-  });
-  
-  google.maps.event.addListener(markerNike, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Nike', '3.0', '1 Bowerman Dr Beaverton, OR', 'http://www.inhersight.com/company/nike '));
-    info.open(map, markerNike);
-  });
-  
-  clickZoom(markerNike);
-  
+  if(friendlyCheckBox){
+      var nike = new google.maps.LatLng(45.5075727,-122.8271301)
+      var pinImageNike = colorRating(3.0);
+      var markerNike = new google.maps.Marker({
+        position: nike,
+        map: map,
+        icon: pinImageNike,
+        title: 'Nike'
+      });
+      
+      google.maps.event.addListener(markerNike, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Nike', '3.0', '1 Bowerman Dr Beaverton, OR', 'http://www.inhersight.com/company/nike '));
+        info.open(map, markerNike);
+      });
+      
+      clickZoom(markerNike);
+  }
   //RHODE ISLAND
   
   //cvs health
   if (almostFriendlyCheckBox) {
-  var cvs = new google.maps.LatLng(41.990756,-71.477265)
-  var pinImageCvs = colorRating(2.1);
-  var markerCVS = new google.maps.Marker({
-    position: cvs,
-    map: map,
-    icon: pinImageCvs,
-    title: 'CVS'
-  });
-  
-  google.maps.event.addListener(markerCVS, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('CVS', '2.1', '1 CVS Dr, Woonsocket, RI 02895', 'http://www.inhersight.com/company/cvs-health '));
-    info.open(map, markerCVS);
-  });
-  
-  clickZoom(markerCVS);
+      var cvs = new google.maps.LatLng(41.990756,-71.477265)
+      var pinImageCvs = colorRating(2.1);
+      var markerCVS = new google.maps.Marker({
+        position: cvs,
+        map: map,
+        icon: pinImageCvs,
+        title: 'CVS'
+      });
+      
+      google.maps.event.addListener(markerCVS, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('CVS', '2.1', '1 CVS Dr, Woonsocket, RI 02895', 'http://www.inhersight.com/company/cvs-health '));
+        info.open(map, markerCVS);
+      });
+      
+      clickZoom(markerCVS);
   }
   //fidelity
-  
-  var fidelity = new google.maps.LatLng(42.349119,-71.082163)
-  var pinImageFid = colorRating(2.9);
-  var markerFid = new google.maps.Marker({
-    position: fidelity,
-    map: map,
-    icon: pinImageFid,
-    title: 'Fidelity Investments'
-  });
-  
-  google.maps.event.addListener(markerFid, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Fidelity Investments', '2.9', '801 Boylston St, Boston, MA 02116', 
-    'http://www.inhersight.com/company/fidelity-investments  '));
-    info.open(map, markerFid);
-  });
-  
-  clickZoom(markerFid);
-  
+  if(friendlyCheckBox){
+      var fidelity = new google.maps.LatLng(42.349119,-71.082163)
+      var pinImageFid = colorRating(2.9);
+      var markerFid = new google.maps.Marker({
+        position: fidelity,
+        map: map,
+        icon: pinImageFid,
+        title: 'Fidelity Investments'
+      });
+      
+      google.maps.event.addListener(markerFid, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Fidelity Investments', '2.9', '801 Boylston St, Boston, MA 02116', 
+        'http://www.inhersight.com/company/fidelity-investments  '));
+        info.open(map, markerFid);
+      });
+      
+      clickZoom(markerFid);
+  }
   //abengoa
   if (almostFriendlyCheckBox) {
-  var abengoa = new google.maps.LatLng(39.735451,-105.127586)
-  var pinImageAbe = colorRating(1.9);
-  var markerAbe = new google.maps.Marker({
-    position: abengoa,
-    map: map,
-    icon: pinImageAbe,
-    title: 'Abengoa'
-  });
-  
-  google.maps.event.addListener(markerAbe, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Abengoa Solar', '1.9', '1250 Simms St #101 Lakewood, CO 80401',
-    'http://www.inhersight.com/company/abengoa'));
-    info.open(map, markerAbe);
-  });
-  
-  clickZoom(markerAbe);
+      var abengoa = new google.maps.LatLng(39.735451,-105.127586)
+      var pinImageAbe = colorRating(1.9);
+      var markerAbe = new google.maps.Marker({
+        position: abengoa,
+        map: map,
+        icon: pinImageAbe,
+        title: 'Abengoa'
+      });
+      
+      google.maps.event.addListener(markerAbe, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Abengoa Solar', '1.9', '1250 Simms St #101 Lakewood, CO 80401',
+        'http://www.inhersight.com/company/abengoa'));
+        info.open(map, markerAbe);
+      });
+      
+      clickZoom(markerAbe);
 }
   
   //Vanguard
-  
-  var vanguard = new google.maps.LatLng(40.072565,-75.4235)
-  var pinImageVan = colorRating(2.9);
-  var markerVan = new google.maps.Marker({
-    position: vanguard,
-    map: map,
-    icon: pinImageVan,
-    title: 'Vanguard'
-  });
-  
-   google.maps.event.addListener(markerVan, 'click', function() {
-     info.close();
-    info = infoWindow(contentString('Vanguard', '2.9', '1041 W Valley Rd Wayne, PA', 
-    'http://www.inhersight.com/company/vanguard  '));
-    info.open(map, markerVan);
-  });
-
-clickZoom(markerVan);
-
+ if(friendlyCheckBox){ 
+      var vanguard = new google.maps.LatLng(40.072565,-75.4235)
+      var pinImageVan = colorRating(2.9);
+      var markerVan = new google.maps.Marker({
+        position: vanguard,
+        map: map,
+        icon: pinImageVan,
+        title: 'Vanguard'
+      });
+      
+       google.maps.event.addListener(markerVan, 'click', function() {
+         info.close();
+        info = infoWindow(contentString('Vanguard', '2.9', '1041 W Valley Rd Wayne, PA', 
+        'http://www.inhersight.com/company/vanguard  '));
+        info.open(map, markerVan);
+      });
+    
+    clickZoom(markerVan);
+}
   //abbott
-  
-  var abbott = new google.maps.LatLng(42.3020749,-87.8913672)
-  var pinImageAbbott = colorRating(4.1);
-  var markerAbbott = new google.maps.Marker({
-    position: abbott,
-    map: map,
-    icon: pinImageAbbott,
-    title: 'Abbott'
-  });
-
-
-google.maps.event.addListener(markerAbbott, 'click', function() {
-  info.close();
-  info = infoWindow(contentString('Abbott', '4.1', '100 Abbott Park Road. AbbottPark, Illinois 60064-3500',
-'http://www.inhersight.com/company/abbott '));
-info.open(map, markerAbbott);
-});
-
-clickZoom(markerAbbott);
-
+if(superCheckBox){
+      var abbott = new google.maps.LatLng(42.3020749,-87.8913672)
+      var pinImageAbbott = colorRating(4.1);
+      var markerAbbott = new google.maps.Marker({
+        position: abbott,
+        map: map,
+        icon: pinImageAbbott,
+        title: 'Abbott'
+      });
+    
+    
+    google.maps.event.addListener(markerAbbott, 'click', function() {
+      info.close();
+      info = infoWindow(contentString('Abbott', '4.1', '100 Abbott Park Road. AbbottPark, Illinois 60064-3500',
+    'http://www.inhersight.com/company/abbott '));
+    info.open(map, markerAbbott);
+    });
+    
+    clickZoom(markerAbbott);
+}
 
 }
 
