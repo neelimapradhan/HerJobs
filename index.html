@@ -195,6 +195,12 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerInovalon, 'click', function() {
+    infoWindow(contentString('Inovalon', '2.9', '4321 Collington Rd, Bowie, MD 20716',
+    'http://www.inhersight.com/company/inovalon')).open(map, markerInovalon);
+  });
+
+  
   //CALI
   
   //google mountain view
@@ -207,6 +213,11 @@
     title: 'Click to zoom'
   });
   
+   google.maps.event.addListener(markerGoog1, 'click', function() {
+    infoWindow(contentString('Mountain View', '4.1', '1600 Amphitheatre Pkwy, Mountain View, CA 94043', 
+    'http://www.inhersight.com/company/mountain-view ')).open(map, markerGoog1);
+  });
+  
   //facebook
   var face = new google.maps.LatLng(37.4841002,-122.1482519)
   var pinImageFacebook = colorRating(4.6);
@@ -215,6 +226,11 @@
     map: map,
     icon: pinImageFacebook,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerFace, 'click', function() {
+infoWindow(contentString('Facebook', '4.6', '1 Hacker Way, Menlo Park, CA 94025', 
+    'http://www.inhersight.com/company/facebook ')).open(map, markerFace);
   });
   
   //apple
@@ -227,6 +243,11 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerApple, 'click', function() {
+infoWindow(contentString('Apple', '2.7', '1 Infinite Loop, Cupertino, CA 95014', 
+    'http://www.inhersight.com/company/apple ')).open(map, markerApple);
+  });
+  
   //cisco
   var cisco = new google.maps.LatLng(37.4093373,-121.9261735)
   var pinImageCisco = colorRating(3.7);
@@ -235,6 +256,11 @@
     map: map,
     icon: pinImageCisco,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerCisco, 'click', function() {
+    infoWindow(contentString('Cisco', '3.7', '3700 Cisco Way San Jose, CA', 
+    'http://www.inhersight.com/company/cisco  ')).open(map, markerCisco);
   });
   
   //intel
@@ -247,6 +273,12 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerIntel, 'click', function() {
+    infoWindow(contentString('Intel', '4.0', '2200 Mission College Blvd, Santa Clara, CA 95054', 
+    'http://www.inhersight.com/company/intel ')).open(map, markerIntel);
+  });
+
+  
   //yahoo
   var yahoo = new google.maps.LatLng(37.4171809,-122.025103)
   var pinImageYahoo = colorRating(3.5);
@@ -255,6 +287,11 @@
     map: map,
     icon: pinImageYahoo,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerYahoo, 'click', function() {
+    infoWindow(contentString('Yahoo', '3.5', '701 1st Ave, Sunnyvale, CA 94089', 
+    'http://www.inhersight.com/company/yahoo  ')).open(map, markerYahoo);
   });
   
   //ebay
@@ -282,6 +319,11 @@
     title: 'Click to zoom'
   });
   
+   google.maps.event.addListener(markerHP, 'click', function() {
+    infoWindow(contentString('HP', '2.7', '3000 Hanover St. Palo Alto, CA 94303', 
+    'http://www.inhersight.com/company/hp ')).open(map, markerHP);
+  });
+  
   //autodesk
   var autodesk = new google.maps.LatLng(38.0054203,-122.5306773)
   var pinImageAuto = colorRating(4.0);
@@ -290,6 +332,10 @@
     map: map,
     icon: pinImageAuto,
     title: 'Click to zoom'
+  });
+  
+  google.maps.event.addListener(markerAutodesk, 'click', function() {
+    infoWindow(contentString('Autodesk', '4.0', '111 McInnis Pkwy, San Rafael, CA 94903', 'http://www.inhersight.com/company/autodesk ')).open(map, markerAutodesk);
   });
   
   
@@ -313,6 +359,11 @@
     map: map,
     icon: pinImageAmz,
     title: 'Click to zoom'
+  });
+  
+   google.maps.event.addListener(markerAmazon, 'click', function() {
+    infoWindow(contentString('Amazon’', '3.1', '440 Terry Ave N Seattle, WA 98109', 
+    'http://www.inhersight.com/company/amazon ')).open(map, markerAmazon);
   });
   
 
@@ -348,6 +399,11 @@
     title: 'Click to zoom'
   });
   
+   google.maps.event.addListener(markerIbm, 'click', function() {
+    infoWindow(contentString('IBM', '3.5', '590 Madison Ave New York, NY', 
+    'http://www.inhersight.com/company/ibm ')).open(map, markerIbm);
+  });
+  
   //COLORADO
   
   //zayo
@@ -377,6 +433,11 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerApollo, 'click', function() {
+    infoWindow(contentString('Apollo Education Group', '3.3', '4025 S Riverpoint Pkwy, Phoenix, AZ 85040', 
+    'http://www.inhersight.com/company/apollo-education-group ')).open(map, markerApollo);
+  });
+  
   //OREGON
   
   //nike
@@ -389,6 +450,10 @@
     title: 'Click to zoom'
   });
   
+  google.maps.event.addListener(markerNike, 'click', function() {
+    infoWindow(contentString('Nike', '3.0', '1 Bowerman Dr Beaverton, OR', 'http://www.inhersight.com/company/nike ')).open(map, markerNike);
+  });
+  
   //RHODE ISLAND
   
   //cvs health
@@ -399,6 +464,10 @@
     map: map,
     icon: pinImageCvs,
     title: 'Click to zoom'
+  });
+  
+  google.maps.event.addListener(markerCVS, 'click', function() {
+    infoWindow(contentString('CVS', '2.1', '1 CVS Dr, Woonsocket, RI 02895', 'http://www.inhersight.com/company/cvs-health ')).open(map, markerCVS);
   });
   
   //fidelity
