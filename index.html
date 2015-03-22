@@ -71,9 +71,12 @@ var friendlyCheckBox = true;
 var almostFriendlyCheckBox = false; 
 
 function displayResult() {
-    superCheckBox = document.getElementById("super").check();
-    friendlyCheckBox = document.getElementById("friendly").check();
-    almostFriendlyCheckBox = document.getElementById("friendly").check();
+    superCheckBox = $("#super").check();
+    friendlyCheckBox = $("#friendly").check();
+    almostFriendlyCheckBox = $("#friendly").check();
+    console.log(superCheckBox);
+    console.log(friendlyCheckBox);
+    console.log(almostFriendlyCheckBox);
 }
 </script>
            </td>
