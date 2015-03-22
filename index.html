@@ -57,13 +57,13 @@
 Super Friendly: <input type="checkbox" id="super">
 Friendly:<input type="checkbox" id="friendly">
 Almost Friendly:<input type="checkbox" id="almost-friendly">
-<button onclick="check()">Display</button>
+<button onclick="displayResult()">Display</button>
 
 <script>
 
-var superCheckBox = false;
-var friendlyCheckBox = false;
-var almostFriendlyCheckBox = false; 
+var superCheckBox = true;
+var friendlyCheckBox = true;
+var almostFriendlyCheckBox = true; 
 
 function displayResult() {
     superCheckBox = document.getElementById("super");
@@ -135,19 +135,21 @@ function displayResult() {
  //DC!
  //department of defence
     var DOD = new google.maps.LatLng(38.854213,-77.010467)
+    if (almostFriendlyCheckBox) {
   var pinImageDOD = colorRating(2.3);
   var markerDod = new google.maps.Marker({
     position: DOD,
     map: map,
     icon: pinImageDOD,
     title: 'Click to zoom'
-
   });
-  
+    
    google.maps.event.addListener(markerDod, 'click', function() {
     infoWindow(contentString('Department of Defence', '2.3', '1000 Defense Blvd Washington, DC', 
     'http://www.inhersight.com/company/department-of-defense-dod')).open(map, markerDod);
   });
+  
+    }
   
   
   //booz
