@@ -1,2 +1,2 @@
 HerJobs
-https://www.neelimapradhan.github.io
+www.neelimapradhan.github.io
